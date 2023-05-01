@@ -1,0 +1,62 @@
+@import "_nullstyle.scss";
+
+@font-face {
+   font-family: "Nexa-Trial";
+   src: url("../fonts/Nexa-Trial-Bold.eot");
+   src: url("../fonts/Nexa-Trial-Bold.eot?#iefix") format("embedded-opentype"),
+      url("../fonts/Nexa-Trial-Bold.woff2") format("woff2"), url("../fonts/Nexa-Trial-Bold.woff") format("woff"),
+      url("../fonts/Nexa-Trial-Bold.ttf") format("truetype"),
+      url("../fonts/Nexa-Trial-Bold.svg#Nexa-Trial-Bold") format("svg");
+   font-weight: 700;
+   font-style: normal;
+}
+
+.body {
+   font-family: "Nexa-Trial";
+   font-weight: 700;
+}
+
+.wrapper {
+   max-width: 1440px;
+   padding: 0px 10px 0px 10px;
+   margin: 0 auto;
+}
+
+.header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   height: 117px;
+   &__logo {
+      display: flex;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 30px;
+      line-height: 30px;
+   }
+
+   &__donatebtn {
+      display: flex;
+      justify-content: center;
+      cursor: pointer;
+   }
+}
+
+.menu {
+   &__list {
+      display: flex;
+      justify-content: center;
+   }
+
+   &__link {
+      cursor: pointer;
+      &:not(:last-child) {
+         margin: 0px 50px 0px 0px;
+      }
+   }
+}
+
+.donate {
+   &__now {
+   }
+}
