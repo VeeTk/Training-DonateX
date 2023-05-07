@@ -10,35 +10,65 @@
    font-weight: 700;
    font-style: normal;
 }
+@font-face {
+   font-family: "Now";
+   src: url("../fonts/Now-Medium.eot");
+   src: url("../fonts/Now-Medium.eot?#iefix") format("embedded-opentype"),
+      url("../fonts/Now-Medium.woff2") format("woff2"), url("../fonts/Now-Medium.woff") format("woff"),
+      url("../fonts/Now-Medium.ttf") format("truetype"), url("../fonts/Now-Medium.svg#Now-Medium") format("svg");
+   font-weight: 500;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: "Now";
+   src: url("../fonts/Now-Regular.eot");
+   src: url("../fonts/Now-Regular.eot?#iefix") format("embedded-opentype"),
+      url("../fonts/Now-Regular.woff2") format("woff2"), url("../fonts/Now-Regular.woff") format("woff"),
+      url("../fonts/Now-Regular.ttf") format("truetype"), url("../fonts/Now-Regular.svg#Now-Regular") format("svg");
+   font-weight: 400;
+   font-style: normal;
+}
 
 .body {
    font-family: "Nexa-Trial";
    font-weight: 700;
 }
 
-.wrapper {
-   max-width: 1440px;
-   padding: 0px 10px 0px 10px;
-   margin: 0 auto;
-}
-
 .header {
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
    height: 117px;
-   &__logo {
+   background-color: #f7f7f7;
+   padding: 35px 0px 0px 0px;
+   &__wrapper {
+      max-width: 1440px;
+      margin: 0 auto;
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0px 10px 0px 10px;
+   }
+   &__logo {
       cursor: pointer;
       font-size: 30px;
       line-height: 30px;
+      font-weight: 700;
    }
 
    &__donatebtn {
       display: flex;
       justify-content: center;
+      align-items: center;
       cursor: pointer;
+      height: 43px;
+      width: 126px;
+      background: #ff5d24;
+      border-radius: 5px;
+      &:hover {
+         background: #eb490e;
+      }
+      &:active {
+         background: #ff5d24;
+      }
    }
 }
 
@@ -46,17 +76,33 @@
    &__list {
       display: flex;
       justify-content: center;
+      color: #303030;
    }
 
    &__link {
+      font-family: "Now";
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 20px;
       cursor: pointer;
       &:not(:last-child) {
          margin: 0px 50px 0px 0px;
+      }
+      &:hover {
+         color: #ff5d24;
+      }
+      &:active {
+         color: #303030;
       }
    }
 }
 
 .donate {
    &__now {
+      font-family: "Now";
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 17px;
+      color: #fff;
    }
 }

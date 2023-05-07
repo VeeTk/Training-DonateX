@@ -73,43 +73,87 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   font-style: normal;
 }
+@font-face {
+  font-family: "Now";
+  src: url("../fonts/Now-Medium.eot");
+  src: url("../fonts/Now-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Now-Medium.woff2") format("woff2"), url("../fonts/Now-Medium.woff") format("woff"), url("../fonts/Now-Medium.ttf") format("truetype"), url("../fonts/Now-Medium.svg#Now-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Now";
+  src: url("../fonts/Now-Regular.eot");
+  src: url("../fonts/Now-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Now-Regular.woff2") format("woff2"), url("../fonts/Now-Regular.woff") format("woff"), url("../fonts/Now-Regular.ttf") format("truetype"), url("../fonts/Now-Regular.svg#Now-Regular") format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
 .body {
   font-family: "Nexa-Trial";
   font-weight: 700;
 }
 
-.wrapper {
-  max-width: 1440px;
-  padding: 0px 10px 0px 10px;
-  margin: 0 auto;
-}
-
 .header {
+  height: 117px;
+  background-color: #f7f7f7;
+  padding: 35px 0px 0px 0px;
+}
+.header__wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 117px;
+  padding: 0px 10px 0px 10px;
 }
 .header__logo {
-  display: flex;
-  justify-content: center;
   cursor: pointer;
   font-size: 30px;
   line-height: 30px;
+  font-weight: 700;
 }
 .header__donatebtn {
   display: flex;
   justify-content: center;
+  align-items: center;
   cursor: pointer;
+  height: 43px;
+  width: 126px;
+  background: #ff5d24;
+  border-radius: 5px;
+}
+.header__donatebtn:hover {
+  background: #eb490e;
+}
+.header__donatebtn:active {
+  background: #ff5d24;
 }
 
 .menu__list {
   display: flex;
   justify-content: center;
+  color: #303030;
 }
 .menu__link {
+  font-family: "Now";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
   cursor: pointer;
 }
 .menu__link:not(:last-child) {
   margin: 0px 50px 0px 0px;
+}
+.menu__link:hover {
+  color: #ff5d24;
+}
+.menu__link:active {
+  color: #303030;
+}
+
+.donate__now {
+  font-family: "Now";
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 17px;
+  color: #fff;
 }
